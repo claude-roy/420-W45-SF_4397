@@ -175,7 +175,7 @@ Dans cette partie, vous allez ajouter les logiciels wget, curl, git, Visual Stud
 a- Nous allons installer les outils de base wget, curl et git. Pour ceux qui le désire, vous pouvez également ajouter vim.
 
 ```bash
-sudo apt install wget curl git neovim -y
+sudo apt install wget curl git vim -y
 ```
 
 b. Installer Visual Studio Code : https://code.visualstudio.com/
