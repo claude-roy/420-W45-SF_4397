@@ -303,7 +303,7 @@ cat /etc/fstab >> FichierDesTraces.txt
 #### État du stokage LVM
 
 ```bash
-echo --- Après modification --- > FichierLVM.txt
+echo --- Après modification --- >> FichierLVM.txt
 date >> FichierLVM.txt
 sudo pvs >> FichierLVM.txt
 sudo vgs >> FichierLVM.txt
