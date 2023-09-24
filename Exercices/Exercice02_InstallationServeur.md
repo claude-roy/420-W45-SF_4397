@@ -113,8 +113,6 @@ reboot
 
 Démarrez votre VM et connectez-vous.
 
-**Remise** : Garder une copie de l'écran d'accueil pour votre remise.
-
 #### Mise à jour de votre Ubuntu :
 
 Faites une mise à jour de votre système : 
@@ -126,7 +124,7 @@ sudo apt update && sudo apt full-ugrade -y
 Il se peut qu'une fenêtre vous propose de redémarrer des services. Laissez les services déjà cochés et continuez. Enfin, redémarrez votre serveur&nbsp;:
 
 ```
-reboot
+Reboot now
 ```
 
 
@@ -190,7 +188,7 @@ Dans cette partie, vous allez ajouter les logiciels wget, curl, git et Docker.
 a- Nous allons installer les outils de base wget, curl et git et vim.
 
 ```bash
-sudo apt install wget curl git neovim -y
+sudo apt install wget curl git vim -y
 ```
 
 #### Étape 2: Ajout de Docker
@@ -228,7 +226,7 @@ Vérifier l'état de votre système avant de débuter.
 Les commandes suivantes permettent de garder une trace des informations.  
 
 ```bash
-echo --- avant modification --- > FichierDesTraces.txt
+echo --- Avant modification --- > FichierDesTraces.txt
 date >> FichierDesTraces.txt
 df -H >> FichierDesTraces.txt
 lsblk >> FichierDesTraces.txt
