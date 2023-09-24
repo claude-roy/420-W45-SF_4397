@@ -288,10 +288,22 @@ df -h
 sudo lvextend -l +100%FREE /dev/mapper/ubuntu--vg-ubuntu--lv # ici on utilise le nom complet de la partition logique renvoyé par la commande df.
 ```
 
-Vérifier le résultat et placer l'information dans votre fichier : 
+Vérifier le résultat et placer l'information dans vos fichiers : 
+
+#### Vérification de vos disques
 
 ```bash
-echo --- Après modification --- >> FichierLVM.txt
+echo --- Après modification --- >> FichierDesTraces.txt
+date >> FichierDesTraces.txt
+df -H >> FichierDesTraces.txt
+lsblk >> FichierDesTraces.txt
+cat /etc/fstab >> FichierDesTraces.txt
+```
+
+#### État du stokage LVM
+
+```bash
+echo --- Après modification --- > FichierLVM.txt
 date >> FichierLVM.txt
 sudo pvs >> FichierLVM.txt
 sudo vgs >> FichierLVM.txt
