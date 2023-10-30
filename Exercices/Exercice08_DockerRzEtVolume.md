@@ -266,7 +266,7 @@ docker run -d --rm --name mysql -e MYSQL_ROOT_PASSWORD=Passw0rd -p 3306:3306 mys
     <summary>Commande.</summary>
 
 ```bash
-docker run -d --rm --name mysql -e MYSQL_ROOT_PASSWORD=Passw0rd -p 3306:3306 -v /Users/pfl/tmp/msyql:/var/lib/mysql mysql
+docker run -d --rm --name mysql -e MYSQL_ROOT_PASSWORD=Passw0rd -p 3306:3306 -v $(pwd)/msyql:/var/lib/mysql mysql
 ```
 
 </details>
@@ -276,7 +276,7 @@ docker run -d --rm --name mysql -e MYSQL_ROOT_PASSWORD=Passw0rd -p 3306:3306 -v 
   - Créez la base de données "test" (create database test;).
   - Vérifiez que la base de données est bien existante (show databases;).
 - Arrêtez et supprimez le conteneur "mysql".
-- Recréez un nouveau conteneur mysql et connectez-vous de nouveau à MySQL et listez les bases de données. Que constatez-vous et pourquoi ?
+- Recréez un nouveau conteneur mysql identique et connectez-vous de nouveau à MySQL et listez les bases de données. Que constatez-vous et pourquoi ?
 
 	<details>
 	    <summary>Réponse.</summary>
@@ -311,7 +311,7 @@ docker run -d --rm --name mysql -e MYSQL_ROOT_PASSWORD=Passw0rd -p 3306:3306 -v 
     <summary>Solution.</summary>
 
 ```bash
-docker run -d --rm --name mysql -e MYSQL_ROOT_PASSWORD=Passw0rd -e MYSQL_DATABASE=wordpress -e MYSQL_USER=wordpress -e MYSQL_PASSWORD=Passw0rd -p 3306:3306 -v /Users/pfl/tmp/msyql:/var/lib/mysql mysql:5.7
+docker run -d --rm --name mysql -e MYSQL_ROOT_PASSWORD=Passw0rd -e MYSQL_DATABASE=wordpress -e MYSQL_USER=wordpress -e MYSQL_PASSWORD=Passw0rd -p 3306:3306 -v $(pwd)/msyql_wp:/var/lib/mysql mysql
 
 docker run --rm --name wordpress -d -e WORDPRESS_DB_HOST=172.17.0.2 -e WORDPRESS_DB_USER=wordpress -e WORDPRESS_DB_PASSWORD=Passw0rd -e WORDPRESS_DB_NAME=wordpress -e WORDPRESS_TABLE_PREFIX=wp_ -p 8080:80 wordpress
 ```
