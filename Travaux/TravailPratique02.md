@@ -46,7 +46,7 @@ Vous devez créer un dépôt GitHub pour votre travail pratique 2.
 - Votre dépôt doit contenir les fichiers et vérifications demandés.
 - Vous devez utiliser le format Markdown (md).
 - Vous devez donner vos sites de références.
-- Vous devez indiquer l'adresse du dépôt dans LÉA, Travaux-> TP2 - Docker.  
+- Vous devez indiquer l'adresse du dépôt dans un fichier texte dans LÉA, Travaux-> TP2 - Docker.  
 
 
 ## Section 1 : Vérification et conteneurs
