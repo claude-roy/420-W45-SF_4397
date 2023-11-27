@@ -74,7 +74,7 @@ Dans le fichier `README.md`, inclure une section <code>Section 1 - étape 2</cod
 	- la création du réseau virtuel;
 	- la création de vos conteneurs;
 	- que les conteneurs sont bien reliés au réseau virtuel privé `mon_reseau`;
-	- les journaux de `mongoDB`, identifiez la partie de la création de l'utilisateur `adminmongo`.
+	- les journaux de `apache`, identifiez la partie de votre connexion au serveur Web.
 
 ## Section 2 : Construction personnalisée d'une image
 
